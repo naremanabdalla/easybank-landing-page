@@ -1,6 +1,7 @@
 .header {
     position: relative;
     z-index: 1;
+    padding-top: 0.5rem;
 
     &.open {
 
@@ -72,7 +73,7 @@
             transition: color 300ms ease-in-out;
 
             &:not(:last-child) {
-                margin-right: 5rem;
+                margin-right: 2.5rem;
             }
 
             &::before {

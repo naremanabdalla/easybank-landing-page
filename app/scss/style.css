@@ -1,6 +1,7 @@
 .header {
   position: relative;
   z-index: 1;
+  padding-top: 0.5rem;
 }
 .header.open .header_hamborger > span:first-child {
   transform: rotate(45deg);
@@ -48,7 +49,7 @@
   transition: color 300ms ease-in-out;
 }
 .header_links a:not(:last-child) {
-  margin-right: 5rem;
+  margin-right: 2.5rem;
 }
 .header_links a::before {
   content: "";
@@ -106,6 +107,7 @@
   .hero .container {
     display: flex;
     align-items: center;
+    padding-bottom: 5rem;
   }
 }
 .hero_image {
@@ -161,11 +163,11 @@
 }
 @media (min-width: 64em) {
   .hero_image::after {
-    height: 122%;
+    height: 126%;
     width: 120%;
     background-size: 94%;
     background-position: center 150%;
-    left: 22%;
+    left: 23%;
   }
 }
 .hero_text {
@@ -314,7 +316,6 @@
   border-radius: 0.3125rem;
   overflow: hidden;
   background-color: white;
-  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
   transition: all 150ms ease-in-out;
 }
 .articles .article_item:hover {
@@ -354,13 +355,14 @@
   color: hsl(0, 0%, 100%);
   text-align: center;
   padding: 2.5rem;
+  margin-bottom: 5.5rem;
 }
 @media (min-width: 64em) {
   .footer .container {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 3fr;
-    grid-template-rows: 1fr auto;
-    grid-template-areas: "logo links1 links2 cta" "social links1 links2 copyright";
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo links1 links2 cta";
     justify-items: start;
     gap: 1rem;
   }
@@ -388,7 +390,7 @@
 }
 @media (min-width: 64em) {
   .footer_social {
-    grid-area: social;
+    grid-area: logo;
     align-self: end;
   }
 }
@@ -457,10 +459,13 @@
 }
 @media (min-width: 64em) {
   .footer_copyright {
-    grid-area: copyright;
+    grid-area: cta;
     align-self: end;
     justify-self: end;
   }
+}
+.footer_copyright p {
+  margin-bottom: 0;
 }
 
 html {
@@ -518,7 +523,7 @@ h2 {
 }
 @media (min-width: 64em) {
   h2 {
-    font-size: 2.25rem;
+    font-size: 2.3rem;
     margin-bottom: 2.25rem;
   }
 }
@@ -539,7 +544,7 @@ a:visited {
   margin: 0 auto;
 }
 .container_p {
-  padding: 4.375rem 1.5rem;
+  padding: 4.375rem 2rem;
 }
 @media (min-width: 64em) {
   .container_p {
@@ -563,13 +568,13 @@ a:visited {
   }
 }
 .container_pr {
-  padding-right: 1.5rem;
+  padding-right: 2rem;
 }
 .container_pl {
-  padding-left: 1.5rem;
+  padding-left: 2rem;
 }
 .container_px {
-  padding-inline: 1.5rem;
+  padding-inline: 2rem;
 }
 .container_py {
   padding-block: 4.375rem;

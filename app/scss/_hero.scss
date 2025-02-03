@@ -9,6 +9,7 @@
         @include breakpoint-up(large) {
             display: flex;
             align-items: center;
+            padding-bottom: 5rem;
         }
     }
 
@@ -64,11 +65,11 @@
             }
 
             @include breakpoint-up(large) {
-                height: 122%;
+                height: 126%;
                 width: 120%;
                 background-size: 94%;
                 background-position: center 150%;
-                left: 22%;
+                left: 23%;
             }
         }
     }
