@@ -24,6 +24,7 @@
 
         @include breakpoint-up(medium) {
             min-height: 25rem;
+            // min-height: 25rem; 
             background-position: center 60%;
         }
 
