@@ -9,7 +9,7 @@
             display: grid;
             grid-template-columns: 1fr;
             // grid-template-columns: repeat(auto-fit, minmax(14.375rem, 1fr));
-            gap: 1.875rem;
+            gap: 1.8rem;
 
             @include breakpoint-up(medium) {
                 grid-template-columns: repeat(2, 1fr);
@@ -44,7 +44,7 @@
             color: $Grayish-Blue;
 
             @include breakpoint-up(medium) {
-                padding: 1.875rem 1.5625rem;
+                padding: 1.875rem 0.92rem;
             }
         }
 

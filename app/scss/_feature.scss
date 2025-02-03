@@ -1,4 +1,10 @@
 .feature {
+    .container {
+        @include breakpoint-up(large) {
+            padding-bottom: 3rem;
+        }
+    }
+
     background-color: $Light-Grayish-Blue;
     text-align: center;
 
@@ -57,7 +63,7 @@
     }
 
     &_description {
-        font-size: 0.875rem;
+        font-size: 0.89rem;
         line-height: 1.5;
     }
 }
